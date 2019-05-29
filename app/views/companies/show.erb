@@ -1,0 +1,27 @@
+<body class="company_show">
+  <div>
+    <div class='posting_show_heading'>
+      <h3><%= @company.name %></h3>
+      <p><%= @company.address %></p>
+      <img class="posting_show_logo" src="<%= @company.logo %>" alt="">
+    </div>
+    <div>
+      <img class="posting_show_map" src="<%= asset_path('qcenter.png') %>" alt="Map to Q center"><img class="posting_show_image" src="<%= @company.main_image %>" alt="">
+
+    </div>
+    <div class='company_details'>
+      <div>
+        <h5>EMPLOYER PROFILE</h5>
+        <p><%= @company.profile %></p>
+      </div>
+      <div>
+        <h5>ABOUT THIS EMPLOYER</h5>
+        <p><%= @company.name %></p>
+        <p><%= @company.address%></p>
+      </div>
+
+
+
+      </div>
+  </div>
+</body>

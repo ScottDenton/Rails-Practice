@@ -50,6 +50,22 @@
 
 
 
+/* Company show */
+.company_details{
+  display: flex;
+}
+
+.company_details div{
+  margin: 20px;
+}
+
+.company_details  h5{
+  border-bottom: 0.5px solid rgb(142, 142, 142);
+  color: rgb(142, 142, 142);
+}
+
+
+
 
 
 

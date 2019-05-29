@@ -2,11 +2,11 @@
   <div class="all_postings_section">
     <% @postings.each do |posting| %>
       <div class='posting_card'>
-        <img class="posting_image" src="<%= posting.image_url %>" alt="<%= posting.position %>">
+        <img class="posting_image" src="<%= posting.company.main_image %>" alt="<%= posting.position %>">
         <div class="posting_info">
-          <img class="posting_logo" src="<%= posting.logo %>" alt="<%= posting.company %>">
+          <img class="posting_logo" src="<%= posting.company.logo %>" alt="<%= posting.company.name %>">
           <p> <%= link_to posting.position, posting_path(posting.id)%></p>
-          <p> <%= posting.company %></p>
+          <p> <%= link_to posting.company.name, company_path(posting.company.id) %></p>
           <p> <%= posting.location %></p>
         </div>
       </div>

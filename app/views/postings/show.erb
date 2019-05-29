@@ -2,10 +2,10 @@
   <div>
     <div class='posting_show_heading'>
       <h3><%= @posting.position %></h3>
-      <img class="posting_show_logo" src="<%= @posting.logo %>" alt="">
+      <img class="posting_show_logo" src="<%= @posting.company.logo %>" alt="">
     </div>
     <div>
-      <img class="posting_show_map" src="<%= asset_path('qcenter.png') %>" alt="Map to Q center"><img class="posting_show_image" src="<%= @posting.image_url %>" alt="">
+      <img class="posting_show_map" src="<%= asset_path('qcenter.png') %>" alt="Map to Q center"><img class="posting_show_image" src="<%= @posting.company.main_image %>" alt="">
 
     </div>
     <div>

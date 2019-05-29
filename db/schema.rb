@@ -10,17 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_29_205305) do
+ActiveRecord::Schema.define(version: 2019_05_29_220428) do
+
+  create_table "companies", force: :cascade do |t|
+    t.string "name"
+    t.string "address"
+    t.text "profile"
+    t.string "logo"
+    t.string "main_image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "postings", force: :cascade do |t|
-    t.string "image_url"
-    t.string "logo"
-    t.string "company"
     t.string "location"
     t.string "position"
     t.text "job_description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "company_id"
   end
 
 end
