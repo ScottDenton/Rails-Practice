@@ -1,0 +1,65 @@
+/* All posting section  */
+
+.all_postings_section{
+  display: flex;
+}
+
+.posting_card{
+  width: 253px;
+  height: 350px;
+  overflow: scroll;
+  border: 0.5px solid lightgrey;
+  margin: 20px;
+  font-size: 0.9em;
+}
+
+.posting_image{
+  width: 100%;
+}
+
+.posting_info{
+  padding: 10px;
+}
+
+.posting_logo{
+  height: 50px;
+}
+
+/* Posting show */
+
+.posting_show_heading {
+  width: 100%;
+  display: flex;
+}
+
+.posting_show_logo {
+  float: right;
+  height: 100px;
+}
+
+.posting_show_image{
+  width: 650px;
+  height: 400px;
+  padding: 0px;
+}
+.posting_show_map{
+  width: 450px;
+  height: 400px;
+  padding: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */

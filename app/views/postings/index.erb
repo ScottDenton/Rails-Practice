@@ -1,0 +1,16 @@
+<body class="postings_index">
+  <div class="all_postings_section">
+    <% @postings.each do |posting| %>
+      <div class='posting_card'>
+        <img class="posting_image" src="<%= posting.image_url %>" alt="<%= posting.position %>">
+        <div class="posting_info">
+          <img class="posting_logo" src="<%= posting.logo %>" alt="<%= posting.company %>">
+          <p> <%= link_to posting.position, posting_path(posting.id)%></p>
+          <p> <%= posting.company %></p>
+          <p> <%= posting.location %></p>
+        </div>
+      </div>
+    <% end %>
+
+  </div>
+</body>
