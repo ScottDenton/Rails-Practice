@@ -8,6 +8,7 @@ class PostingsController < ApplicationController
   end
 
   def new
+    @posting=Posting.new
     @companies = Company.all
   end
 
@@ -16,9 +17,21 @@ class PostingsController < ApplicationController
     redirect_to postings_path
   end
 
+  def edit
+    @posting=Posting.find(params[:id])
+    @companies = Company.all
+
+  end
+
+  def update
+    @posting = Posting.find(params[:id])
+    @posting.update(posting_params)
+    redirect_to postings_path
+  end
+
   private
 
   def posting_params
-    params.permit(:position, :location, :job_description, :company_id)
+    params.require(:posting).permit(:position, :location, :job_description, :company_id)
   end
 end

@@ -1,0 +1,20 @@
+<%= form_for @posting do |f|%>
+  <div>
+    <%= f.label :position %>
+    <%= f.text_area :position %>
+  </div>
+  <div>
+    <%= f.label :location %>
+    <%= f.text_area :location %>
+  </div>
+  <div>
+    <%= f.label :job_description %>
+    <%= f.text_area :job_description %>
+  </div>
+  <div>
+    <%= f.label :company_id %>
+    <%= f.select :company_id, options_from_collection_for_select(@companies, :id, :name) %>
+  </div>
+
+  <%= f.submit "Submit" %>
+<% end %>
