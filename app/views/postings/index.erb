@@ -1,4 +1,5 @@
 <body class="postings_index">
+  <div><%= link_to "Post new Job", new_posting_path %></div>
   <div class="all_postings_section">
     <% @postings.each do |posting| %>
       <div class='posting_card'>

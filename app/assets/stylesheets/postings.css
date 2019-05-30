@@ -53,6 +53,7 @@
 /* Company show */
 .company_details{
   display: flex;
+  color: rgb(95,77, 72)
 }
 
 .company_details div{
